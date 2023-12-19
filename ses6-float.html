@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>การจัดวางเลย์เอาท์บนเว็บเพจด้วย Float</title>
+    <link rel="stylesheet" href="mainStyle.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .box-1 img{
+            float: left;
+        }
+        .box-2 img{
+            float: right;
+        }
+        .box-3 img{
+            float: none;
+        }
+        .mycontainer{
+            background: #333;
+            color: white;
+            width: 960px;
+            margin: 30px auto;
+        }   
+        .box{
+            background-color: blanchedalmond;
+            color: black;
+            border: 1px solid #f0f;
+            padding: 10px 30px;
+            margin: 15px;
+           /*  border-width: 3px; */
+           /* border-color: blueviolet; */
+        }
+        #box-1{
+            
+        }
+        #box-2{
+            float: left;
+            width: 50%;
+        }
+        #box-3{
+            float: right;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+    <h1>การจัดวางเลย์เอาท์บนเว็บเพจด้วย Float</h1>
+    <ul> float กำหนดให้อิลิเมนต์สามารถลอยอยู่ด้านใดด้านหนึ่ง
+        โดยค่าที่กำหนดได้ คือ
+        <li>
+            left, right (ให้ลอกอยู่ทางด้านซ้ายและขวาตามลำลับ)
+        </li>
+        <li>
+            none ไม่ให้มีการลอก (default)
+        </li>
+    </ul>
+    <ul> clear ไม่อนุญาตให้มีการลอยของอิลิเมนต์ค่าที่กำหนดได้คือ
+        <li>
+            left, right (ไม่อนุญาตให้มีการลอยทางด้านซ้ายและขวา)
+        </li>
+        <li>
+            both ไม่อนุญาตให้ลอกทั้งสองด้าน
+        </li>
+    </ul>
+    <div class="box-1">
+        <p>
+            <img src="img/403406184_896669205462632_7044082927270516288_n.jpg" alt="" style="width: 100px;">Lorem ipsum dolor 
+            sit amet consectetur adipisicing elit. Autem reiciendis ipsa atque voluptas optio laboriosam repudiandae sunt ea sapiente, perferendis aspernatur? Alias consectetur vel temporibus, repudiandae animi autem vero nulla!
+        </p>
+    </div>
+    <div class="box-2">
+        <p>
+            <img src="img/403406184_896669205462632_7044082927270516288_n.jpg" alt="" style="width: 100px;">Lorem ipsum dolor
+             sit amet consectetur adipisicing elit. Et nisi deserunt nam harum odit sequi esse, officia est dolorum nihil! Cupiditate recusandae ipsam nihil ex illo esse expedita autem asperiores!
+        </p>
+    </div>
+    <div class="box-">
+        <p>
+            <img src="img/403406184_896669205462632_7044082927270516288_n.jpg" alt="" style="width: 100px;"> Lorem ipsum dolor 
+            sit amet consectetur adipisicing elit. At maiores quisquam vero dignissimos saepe. Eum adipisci, at laborum totam rerum velit! Facere assumenda aspernatur nulla est excepturi iusto mollitia pariatur.
+        </p>
+    </div>
+<hr>
+    <div class="mycontainer"> <!-- เป็นแม่ของทุกตัว-->
+        <div id="box-1" class="box">
+            <h2>Title 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vitae illo incidunt perferendis quae natus consequuntur, cumque nam dicta eos. Eaque exercitationem deleniti vitae odio impedit molestias modi consequuntur repudiandae?</p>
+        </div>
+        <div id="box-2" class="box">
+            <h2>Title 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vitae illo incidunt perferendis quae natus consequuntur, cumque nam dicta eos. Eaque exercitationem deleniti vitae odio impedit molestias modi consequuntur repudiandae?</p>
+        </div>
+        <div id="box-3" class="box">
+            <h2>Title 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur vitae illo incidunt perferendis quae natus consequuntur, cumque nam dicta eos. Eaque exercitationem deleniti vitae odio impedit molestias modi consequuntur repudiandae?</p>
+        </div>
+    </div>
+</body>
+</html>
